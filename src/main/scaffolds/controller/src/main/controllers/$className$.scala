@@ -1,3 +1,5 @@
 package controller
 
-class $className$ {}
+class $className$ {
+  def xxx(): Unit = ()
+}

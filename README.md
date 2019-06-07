@@ -1,4 +1,4 @@
-# Play Silhouette Angular Typescript sample application
+# Play in Harness
 A PlayFramework Template for Startup & Indie Developer
 
 ## Installation

@@ -1,6 +1,10 @@
-target/
-boot/
-lib_managed/
-src_managed/
-project/plugins/project/
+# IntelliJ
+.idea
 .idea/*
+.idea_modules
+!.idea/codeStyleSettings.xml
+
+# Play
+project/project
+project/target
+target

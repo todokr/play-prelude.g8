@@ -1,2 +1,6 @@
-addSbtPlugin("org.foundweekends.giter8" %% "sbt-giter8" % "0.12.0-M1")
-libraryDependencies += { "org.scala-sbt" %% "scripted-plugin" % sbtVersion.value }
+// Comment to get more information during initialization
+logLevel := Level.Warn
+
+addSbtPlugin("com.heroku" % "sbt-heroku" % "2.1.1")
+
+addSbtPlugin("com.typesafe.sbt" % "sbt-native-packager" % "1.3.4")

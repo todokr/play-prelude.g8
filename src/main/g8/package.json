@@ -1,0 +1,19 @@
+{
+  "name": "play-in-harness",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "postinstall": "cd app-ui && npm install"
+  },
+  "engines": {
+    "node": "8.9.0",
+    "npm": ">= 3"
+  },
+  "devDependencies": {
+    "@nuxt/typescript": "^2.8.0"
+  }
+}

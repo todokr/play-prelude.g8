@@ -1,9 +1,8 @@
-# general
-*.log
-*~
-.DS_Store
+# Play
+logs
+project/project
 
-# scala
+# Scala
 *.class
 .cache
 .history
@@ -19,12 +18,13 @@ project/plugins/project/
 
 # IntelliJ
 .idea
-.idea/*
+o.idea/*
+.idea_modules
 !.idea/codeStyleSettings.xml
 
-# Play
-logs
-project/project/
+# Web
+node_modules
+npm.debug.log
 
-# web
-node_modules/
+#OS X
+.DS_Store

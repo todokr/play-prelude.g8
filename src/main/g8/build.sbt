@@ -8,7 +8,7 @@ version := "0.0.1"
 scalaVersion := "2.12.5"
 
 lazy val root = (project in file("."))
-    .settings()
+  .settings()
   .enablePlugins(PlayScala)
 
 libraryDependencies ++= Seq(

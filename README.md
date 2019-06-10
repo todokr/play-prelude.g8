@@ -1,8 +1,8 @@
-# Play in Harness
+# Prelude
 A PlayFramework Template for Startup & Indie Developer.
 
 ## Usage
-Just run `sbt new todokr/play-in-harness.g8`.  
+Just run `sbt new todokr/play-prelude.g8`.  
 
 Then move to generated project directory.   
 Executing `sbt run` will start 
@@ -18,7 +18,7 @@ So you can start development snappy!
 - docker-compose
 - node >= 10.14.2
 
-## Architecture Decision
+## About Architecture Decision
 
 ### Backend
 

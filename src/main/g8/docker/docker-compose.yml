@@ -5,7 +5,7 @@ services:
     container_name: $name$-postgres
     image: postgres:10.7
     ports:
-      - "5432:5432"
+      - "$dbport$:5432"
     restart: always
     environment:
       POSTGRES_USER: root

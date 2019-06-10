@@ -1,7 +1,7 @@
 import play.sbt.routes.RoutesKeys
 import sbt._
 
-name := "play-in-harness"
+name := "$name$"
 
 version := "0.0.1"
 

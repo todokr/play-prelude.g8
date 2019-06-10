@@ -12,7 +12,7 @@ object Dependencies {
     Resolver.jcenterRepo
   )
 
-  val common = Seq(
+  val deps = Seq(
     "com.mohiva" %% "play-silhouette" % Version.silhouette,
     "com.mohiva" %% "play-silhouette-password-bcrypt" % Version.silhouette,
     "com.mohiva" %% "play-silhouette-persistence" % Version.silhouette,

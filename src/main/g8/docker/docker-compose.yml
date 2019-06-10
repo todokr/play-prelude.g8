@@ -1,11 +1,11 @@
 version: '3'
 
 services:
-  $name$-postgres:
-    container_name: $name$-postgres
+  $name;format="normalize"$-postgres:
+    container_name: $name;format="normalize"$-postgres
     image: postgres:10.7
     ports:
-      - "$dbport$:5432"
+      - "$dbPort$:5432"
     restart: always
     environment:
       POSTGRES_USER: root

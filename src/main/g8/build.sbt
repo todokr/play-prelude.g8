@@ -16,10 +16,8 @@ libraryDependencies ++= Seq(
   ehcache,
   filters
 )
-
 resolvers ++= Dependencies.resolvers
-
-libraryDependencies ++= Dependencies.common
+libraryDependencies ++= Dependencies.deps
 
 routesGenerator := InjectedRoutesGenerator
 RoutesKeys.routesImport -= "controllers.Assets.Asset"

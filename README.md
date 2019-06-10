@@ -1,8 +1,22 @@
 # Play in Harness
-A PlayFramework Template for Startup & Indie Developer
+A PlayFramework Template for Startup & Indie Developer.
 
 ## Usage
-Run `sbt new todokr/play-in-harness.g8`
+Just run `sbt new todokr/play-in-harness.g8`.  
+
+Then move to generated project directory.   
+Executing `sbt run` will start 
+
+- Running PostgreSQL on Docker
+- Installing frontend dependencies
+- Running Play application
+- Opening browser
+
+So you can start development snappy!
+
+## Requirements
+- docker-compose
+- node >= 10.14.2
 
 ## Architecture Decision
 

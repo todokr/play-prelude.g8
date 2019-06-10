@@ -3,6 +3,7 @@ import sbt._
 object Dependencies {
 
   object Version {
+    val scalikeJdbcVersion = "3.3.2"
     val silhouette = "5.0.3"
     val playVersion = play.core.PlayVersion.current
     val playMailerVersion = "6.0.1"
@@ -13,6 +14,10 @@ object Dependencies {
   )
 
   val deps = Seq(
+    "org.scalikejdbc" %% "scalikejdbc" % Version.scalikeJdbcVersion,
+    "org.scalikejdbc" %% "scalikejdbc-config"  % Version.scalikeJdbcVersion,
+    "org.postgresql" % "postgresql" % "42.1.4",
+
     "com.mohiva" %% "play-silhouette" % Version.silhouette,
     "com.mohiva" %% "play-silhouette-password-bcrypt" % Version.silhouette,
     "com.mohiva" %% "play-silhouette-persistence" % Version.silhouette,
@@ -25,6 +30,7 @@ object Dependencies {
 
     "com.iheart" %% "ficus" % "1.4.3",
     "net.codingwell" %% "scala-guice" % "4.2.0",
-    "com.davegurnell" %% "bridges" % "0.16.1"
+    "com.davegurnell" %% "bridges" % "0.16.1",
+    "ch.qos.logback"  %  "logback-classic"   % "1.2.3"
   )
 }

@@ -4,7 +4,7 @@ import play.sbt.PlayRunHook
 import sbt._
 import scala.sys.process.Process
 
-object FrontendRunHook {
+object FrontendRunHook extends (File => PlayRunHook) {
   def apply(base: File): PlayRunHook = {
     object UIBuildHook extends PlayRunHook {
 

@@ -2,9 +2,7 @@ import play.sbt.routes.RoutesKeys
 import sbt._
 
 name := "$name$"
-
 version := "0.0.1"
-
 scalaVersion := "2.12.7"
 
 lazy val root = (project in file("."))
@@ -38,3 +36,5 @@ scalacOptions ++= Seq(
   "-Ywarn-numeric-widen", // Warn when numerics are widened.
   "-Ywarn-unused:-imports,_" // Play generates a routes with unused imports
 )
+
+PlayKeys.playRunHooks += baseDirectory.map(DockerHook).value

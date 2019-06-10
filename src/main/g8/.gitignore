@@ -1,25 +1,30 @@
+# Play
 logs
 project/project
-project/target
-target
-tmp
-.history
-dist
-/.idea
-/*.iml
-/out
-/.idea_modules
-/.classpath
-/.project
-/RUNNING_PID
-/.settings
-/bin
-/app-ui/node_modules
-/public/bundles
-npm.debug.log
 
-#ruby
-.bundle
+# Scala
+*.class
+.cache
+.history
+.lib/
+dist/*
+target/
+lib_managed/
+src_managed/
+project/boot/
+project/plugins/project/
+.scala_dependencies
+.worksheet
+
+# IntelliJ
+.idea
+o.idea/*
+.idea_modules
+!.idea/codeStyleSettings.xml
+
+# Web
+node_modules
+npm.debug.log
 
 #OS X
 .DS_Store

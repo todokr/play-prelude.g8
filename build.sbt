@@ -4,6 +4,7 @@
 lazy val root = (project in file(".")).
   settings(
     name := "play-silhouette-angular-typescript",
+    scalaVersion := "2.13.0",
     test in Test := {
       val _ = (g8Test in Test).toTask("").value
     },

@@ -3,8 +3,6 @@ import scala.sys.process._
 val Success = 1
 val Error = 0
 
-// Run angular serve task when Play runs in dev mode
-// https://www.playframework.com/documentation/2.7.x/SBTCookbook
 PlayKeys.playRunHooks += baseDirectory.map(FrontendRunHook).value
 
 def runOnCommandline(script: String)(implicit dir: File): Int = Process(script, dir).!

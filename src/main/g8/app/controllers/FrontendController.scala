@@ -1,6 +1,7 @@
 package controllers
 
 import javax.inject.Inject
+
 import play.api.Configuration
 import play.api.http.HttpErrorHandler
 import play.api.mvc.{AbstractController, Action, AnyContent, ControllerComponents}

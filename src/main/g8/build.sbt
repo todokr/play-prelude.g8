@@ -38,3 +38,5 @@ scalacOptions ++= Seq(
 )
 
 PlayKeys.playRunHooks += baseDirectory.map(DockerHook).value
+
+enablePlugins(ScalikejdbcPlugin)

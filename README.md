@@ -46,3 +46,14 @@ We use Play's static routes to serve frontend code. Reasons is,
 
 When the bussines grows, it's time to separate and serve frontend with CDN ;)
 
+### Database
+
+#### PostgreSQL
+TODO
+
+#### Write DDL by hand
+
+Because database lives longer than application, its schema need to be designed carefully.  
+This is why we doesn't provide the way to generate DDL as a CLI task. It's easy to use but what matters is the incidental complexity of DB schema they yield.  
+Thus, we expect the development flow that write DDL by hand first, then migrate database and generate repository code from schema.  
+Designing schema with simplicity is hard work, but it pays well to focus on ;)

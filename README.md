@@ -18,6 +18,9 @@ So you can start development snappy!
 - docker-compose
 - node >= 10.14.2
 
+## Scaffolding code
+TODO
+
 ## About Architecture Decision
 
 ### Backend

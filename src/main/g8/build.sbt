@@ -34,9 +34,20 @@ scalacOptions ++= Seq(
   "-Ywarn-inaccessible", // Warn about inaccessible types in method signatures.
   "-Ywarn-nullary-override", // Warn when non-nullary overrides nullary, e.g. def foo() over def foo.
   "-Ywarn-numeric-widen", // Warn when numerics are widened.
-  "-Ywarn-unused:-imports,_" // Play generates a routes with unused imports
+  "-Ywarn-unused:-imports,_", // Play generates a routes with unused imports
+  "-Ypartial-unification" // for guardrail
 )
 
+// Docker
 PlayKeys.playRunHooks += baseDirectory.map(DockerHook).value
 
+// DB access
 enablePlugins(ScalikejdbcPlugin)
+
+// DB migration
+enablePlugins(FlywayPlugin)
+flywayUrl := "jdbc:postgresql://localhost:5432/uguis"
+flywayUser := "root"
+flywayPassword := "root"
+flywayLocations := Seq("filesystem:./db/migrations")
+

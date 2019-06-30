@@ -1,6 +1,5 @@
 # Serve index page from public directory
 GET     /                           controllers.FrontendController.index()
-GET     /api/summary                controllers.SystemController.appSummary
 GET     /api/health                 controllers.SystemController.health
 
 # Serve static assets under public directory

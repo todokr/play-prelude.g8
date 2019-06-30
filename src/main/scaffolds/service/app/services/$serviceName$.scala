@@ -8,12 +8,17 @@ import models.$model$
  */
 trait $serviceName$ {
 
-  def list$model$: Seq[$model$] = ???
+  def list$model$: Seq[$model$] = $model$.findAll()
 
-  def find$model$($model;format="camel"$Id: Id[$model$]): Option[$model$] = ???
+  def find$model$($model;format="camel"$Id: Id[$model$]): Option[$model$] = $model$.find($model;format="camel"$Id.value)
 
-  def update$model$($model;format="camel"$: $model$): $model$ = ???
+  def create$model$(): $model$ = ???
 
-  def delelte$model$: Id[$model$] = ???
+  def update$model$($model;format="camel"$: $model$): $model$ = $model$.save($model;format="camel"$)
+
+  def delelte$model$($model;format="camel"$: $model$): Id[$model$] = {
+    val id = $model$.destroy($model;format="camel"$)
+    Id(id)
+  }
 
 }
